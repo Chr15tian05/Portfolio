@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio</title>
+    <link href="./dist/style.css" rel="stylesheet" />
+  </head>
+  <body class="min-h-screen bg-background text-dark">
+    <div class="p-6">
+      <h1 class="text-4xl font-bold text-secondary mb-2">
+        Hey, I'm Chris
+      </h1>
+      <p class="text-lg">
+        Welcome to my <span class="text-accent font-semibold">portfolio</span>!
+      </p>
+      <button
+        class="mt-6 bg-primary text-dark px-6 py-2 rounded hover:bg-accent transition"
+        type="button"
+      >
+        Contact me
+      </button>
+    </div>
+
+    <div class="absolute top-6 right-6">
+  <a
+    href="./chris_cv.pdf"
+    download
+    class="bg-background text-primary px-6 py-2 rounded border border-primary hover:bg-accent transition inline-block text-center"
+  >
+    Download CV
+  </a>
+</div>
+
+    <div class="p-6 mt-8">
+      <h2 class="text-3xl font-semibold text-secondary mb-4">About Me</h2>
+      <p class="text-lg">
+        I'm a 20-year-old Italian with a passion for IT and programming!
+        <br/>
+        I have little experience in front-end development, and I love working with modern technologies.
+        <br/>
+        I live in Footscray, Melbourne, and I am looking for opportunities to grow and learn in the tech industry.
+        <br/>
+        My dream work is to become a pc builder or a phone technician.
+      </p>
+    </div>
+    <div class="p-6 mt-8">
+      <h2 class="text-3xl font-semibold text-secondary mb-4">Projects</h2>
+      <ul class="list-disc pl-5 space-y-2">
+        <li>
+          <a href="#" class="text-primary hover:underline">Project One</a>
+        </li>
+        <li>
+          <a href="#" class="text-primary hover:underline">Project Two</a>
+        </li>
+        <li>
+          <a href="#" class="text-primary hover:underline">Project Three</a>
+        </li>
+      </ul>
+    </div>
+    <div class="p-6 mt-8">
+      <h2 class="text-3xl font-semibold text-secondary mb-4">Fan facts about me</h2>
+      <ul class="list-disc pl-5 space-y-2">
+        <li>
+          I love playing video games and Chess (
+          <a href="https://www.chess.com/member/christiaannnnnn" class="text-primary hover:underline" target="_blank" rel="noopener">
+            chess.com @christiaannnnnn
+          </a>
+          ).
+        </li>
+        <li>I'm a fan of anime and manga.</li>
+        <li>I'm a fan of cooking.</li>
+        <li>I'm proud of my Italian and American roots.</li>
+        <li>I'm interested in watching videos about custom PC mods.</li>
+      </ul>
+    </div>
+  </body>
+</html>
