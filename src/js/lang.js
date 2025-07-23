@@ -13,6 +13,25 @@ async function loadLang() {
   }
 }
 
+// dentro lang.js, dopo applyTranslations()
+
+function setupModalImages() {
+  document.querySelectorAll('.project-image').forEach((img) => {
+    img.addEventListener('click', () => {
+      const modal = document.getElementById('imageModal');
+      const modalImg = document.getElementById('modalImage');
+      const modalDesc = document.getElementById('modalDescription');
+
+      modalImg.src = img.src;
+
+      const key = img.getAttribute('data-i18n');
+      modalDesc.textContent = key && langData[key] ? langData[key] : '';
+
+      modal.classList.remove('hidden');
+    });
+  });
+}
+
 function applyTranslations() {
   document.querySelectorAll("[data-i18n]").forEach((el) => {
     const key = el.dataset.i18n;
@@ -23,6 +42,9 @@ function applyTranslations() {
       console.warn(`Chiave "${key}" non trovata in langData`);
     }
   });
+
+  // Setup modale solo dopo aver caricato le traduzioni
+  setupModalImages();
 }
 
 function switchLang(newLang) {
